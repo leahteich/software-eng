@@ -1,0 +1,103 @@
+table {
+  border: 1px solid white;
+  border-radius: 10px;
+}
+
+td {
+  border: 1px solid white;
+}
+
+table#nodice, #noname {
+  display: none;
+}
+
+
+table#dice, #namevalue,#locstorage, #savedg {
+  background-color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+tr.header {
+  color: white;
+}
+
+.topnum {
+  color: black;
+}
+caption {
+  background-color: white;
+  color: black;
+  font-size: 30px;
+}
+
+.category, .description, .score {
+  background-color: white;
+  color: black
+}
+
+
+#scoretable {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#noscorecard {
+  display: none;
+}
+
+#nolocstorage {
+  display: none;
+}
+
+#nosavedg {
+  display: none;
+}
+
+
+#feedback, #counter {
+  background-color: white;
+}
+
+.finished {
+  background-color: grey;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-family: 'Nunito';
+}
+
+td.reserve {
+  background-color: #98FF98;
+}
+
+#yay {
+  background-color: #a0fc97;
+}
+
+#notyay {
+  background-color:#ff7069;
+}
+
+
+td.nonreserve {
+  background-color: white;
+}
+
+div#roll_button {
+  text-align: center;
+}
+
+td#total_grand {
+  background-color: white;
+}
+
+html {
+  background-color: black;
+  font-family: 'Montserrat';
+  font-size: 15px
+}

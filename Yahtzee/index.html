@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Yahtzee </title>
+    <meta name="description" content="My webpage">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Nunito&display=swap" rel="stylesheet">
+
+  </head>
+<body>
+
+  <div class="header">
+    <h1 id = "titleval"> WELCOME </h1>
+  </div>
+
+  <div id = "topsec">
+    <table id = "namevalue">
+      <tr>
+        <td id = "nameq"> What is your name? </td>
+      </tr>
+      <tr>
+        <td>  <input type="text" id = "name_value"> </td>
+      </tr>
+    </table>
+
+    <table id = "nosavedg">
+      <tr>
+        <td> <button id = "old_game" type="button"> Resume Playing </button> </td>
+      </tr>
+      <tr>
+        <td> <button id = "new_game" type="button"> New Game </button> </td>
+      </tr>
+    </table>
+    <br>
+
+    <table id = "nolocstorage">
+      <tr>
+        <td> <button id = "save_game" type="button"> Save Game </button> </td>
+        <td> <button id = "new_game2" type="button"> New Game </button> </td>
+      </tr>
+    </table>
+
+    <br>
+    <table id = "nodice">
+      <tr>
+        <td class = "nonreserve" id="die_0"> <img src='images/hmm.svg' height='70px'></td>
+        <td class = "nonreserve" id="die_1"> <img src='images/hmm.svg' height='70px'></td>
+        <td class = "nonreserve" id="die_2"> <img src='images/hmm.svg' height='70px'></td>
+        <td class = "nonreserve" id="die_3"> <img src='images/hmm.svg' height='70px'></td>
+        <td class = "nonreserve" id="die_4"> <img src='images/hmm.svg' height='70px'></td>
+      </tr>
+      <div id = "buttondiv">
+      <tr>
+         <td colspan = "5"> <button id = "roll_button" type="button"> Roll the Dice </button> </td>
+      </tr>
+      </div>
+    </table>
+
+  </div>
+  <br>
+  <div id="noscorecard">
+  <table id ="scoretable">
+    <tr>
+      <td colspan = "2" id = "feedback"> Feedback box </td>
+      <td id = "counter"> 3 rolls left </td>
+    </tr>
+    <tr class = "header">
+      <td> Upper Section </td>
+      <td> How to Score </td>
+      <td> Game #1 </td>
+    </tr>
+    <tr>
+      <td class="aces category">Aces <img src="images/one.svg" height="20" /> = 1 </td>
+      <td class="aces description"> Count and Add <br> Only Aces </td>
+      <td class="aces score"><input type="text" id="aces_score_value"> </td>
+    </tr>
+    <tr>
+      <td class="twos category"> Twos <img src="images/two.svg" height="20" /> = 2 </td>
+      <td class="twos description"> Count and Add <br> Only Twos </td>
+      <td class="twos score"><input type="text" id = "twos_score_value"> </td>
+    </tr>
+    <tr>
+      <td class="threes category"> Threes <img src="images/three.svg" height="20" /> = 3 </td>
+      <td class="threes description"> Count and Add <br> Only Threes </td>
+      <td class="threes score"><input type="text" id = "threes_score_value"> </td>
+    </tr>
+    <tr>
+      <td class="fours category"> Fours <img src="images/four.svg" height="20" /> = 4 </td>
+      <td class="fours description"> Count and Add <br> Only Fours </td>
+      <td class="fours score"><input type="text" id = "fours_score_value"> </td>
+    </tr>
+    <tr>
+      <td class="fives category"> Fives <img src="images/five.svg" height="20" /> = 5 </td>
+      <td class="fives description"> Count and Add <br> Only Fives </td>
+      <td class="fives score"><input type="text" id = "fives_score_value"></td>
+    </tr>
+    <tr>
+      <td class="sixes category"> Sixes <img src="images/six.svg" height="20" /> = 6 </td>
+      <td class="sixes description"> Count and Add <br> Only Six </td>
+      <td class="sixes score"><input type="text" id = "sixes_score_value"></td>
+    </tr>
+    <tr>
+      <td class = "total category"> Total Score </td>
+      <td class = "total description"> ---------> </td>
+      <td class = "total score"> </td>
+    </tr>
+    <tr>
+      <td class = "upper_bonus category"> Bonus <br>
+      If total score is 63 or over </td>
+      <td class = "upper_bonus description"> Score 35 </td>
+      <td class = "upper_bonus score"> </td>
+    </tr>
+    <tr>
+      <td class = "total_upper category"> Total <br>
+      Of Upper Section </td>
+      <td class = "total_upper description"> ---------> </td>
+      <td class = "total_upper score"> </td>
+    </tr>
+    <tr class = "header">
+      <td colspan="3"> Lower Section </td>
+    </tr>
+    <tr>
+      <td class = "threekind category"> 3 of a kind </td>
+      <td class = "threekind description"> Add total of all dice </td>
+      <td class = "threekind score"><input type="text" id = "threekind_score_value"></td>
+    </tr>
+    <tr>
+      <td class = "fourkind category"> 4 of a kind </td>
+      <td class = "fourkind description"> Add total of all dice </td>
+      <td class = "fourkind score"><input type="text" id = "fourkind_score_value"></td>
+    </tr>
+    <tr>
+      <td class = "fullhouse category"> Full House </td>
+      <td class = "fullhouse description"> Score 25 </td>
+      <td class = "fullhouse score"><input type="text" id = "house_score_value"></td>
+    </tr>
+    <tr>
+      <td class = "sm category"> Sm. Straight <br> Sequence of 4 </td>
+      <td class = "sm description"> Score 30 </td>
+      <td class = "sm score"><input type="text" id = "sm_score_value"></td>
+    </tr>
+    <tr>
+      <td class = "lg category"> Lg. Straight <br> Sequence of 5 </td>
+      <td class = "lg description"> Score 40 </td>
+      <td class = "lg score"><input type="text" id = "lg_score_value"></td>
+    </tr>
+    <tr>
+      <td class = "yahtzee category"> Yahtzee <br> 5 of a kind </td>
+      <td class = "yahtzee description"> Score 50 </td>
+      <td class = "yahtzee score"><input type="text" id = "yahtzee_score_value"></td>
+    </tr>
+    <tr>
+      <td class = "chance category"> Chance <br> Score Total of All 5 Dice </td>
+      <td class = "chance description"> Count and Add All Dice</td>
+      <td class = "chance score"><input type="text" id = "chance_score_value"></td>
+    </tr>
+    <tr>
+      <td class = "total_lower category"> Total <br> Of Lower Section </td>
+      <td class = "total_lower description"> ---------> </td>
+      <td class = "total_lower score"></td>
+    </tr>
+    <tr>
+      <td class = "total_upper2 category"> Total <br> Of Upper Section </td>
+      <td class = "total_upper2 description"> ---------> </td>
+      <td class = "total_upper2 score"></td>
+    </tr>
+    <tr>
+      <td class = "totaL_grand category"> Grand Total </td>
+      <td class = "total_grand description"> ---------> </td>
+      <td id = "total_grand"></td>
+    </tr>
+  </div>
+
+  <script src = "scripts.js"> </script>
+
+</body>
+</html>
